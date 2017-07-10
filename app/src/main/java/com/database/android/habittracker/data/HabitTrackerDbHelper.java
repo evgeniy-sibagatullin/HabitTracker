@@ -9,7 +9,6 @@ import com.database.android.habittracker.data.HabitContract.HabitEntry;
 public class HabitTrackerDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "habit_tracker.db";
-
     private static final int DATABASE_VERSION = 1;
 
     public HabitTrackerDbHelper(Context context) {
@@ -28,7 +27,5 @@ public class HabitTrackerDbHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
-    }
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {}
 }

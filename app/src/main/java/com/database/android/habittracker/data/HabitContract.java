@@ -4,8 +4,7 @@ import android.provider.BaseColumns;
 
 public final class HabitContract {
 
-    private HabitContract() {
-    }
+    private HabitContract() {}
 
     public static final class HabitEntry implements BaseColumns {
 
@@ -33,7 +32,7 @@ public final class HabitContract {
         public final static String COLUMN_HABIT_AGE_WEEKS = "age_weeks";
 
         /**
-         * Usefulness of the habit.
+         * Usefulness of the habit (from 0 'not useful' to 4 'extremely useful').
          * <p>
          * Type: INTEGER
          */
@@ -45,12 +44,5 @@ public final class HabitContract {
          * Type: TEXT
          */
         public final static String COLUMN_HABIT_NOTE = "note";
-
-        public final static int USEFULNESS_NOT_USEFUL = 0;
-        public final static int USEFULNESS_SLIGHTLY_USEFUL = 1;
-        public final static int USEFULNESS_NORMALLY_USEFUL = 2;
-        public final static int USEFULNESS_VERY_USEFUL = 3;
-        public final static int USEFULNESS_EXTREMELY_USEFUL = 4;
     }
-
 }
